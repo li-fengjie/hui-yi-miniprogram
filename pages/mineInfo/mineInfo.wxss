@@ -1,0 +1,141 @@
+.mine-container {
+    background-color: rgb(242, 242, 242);
+}
+
+.inforShow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bgBox {
+    width: 100%;
+    height: 32vh;
+    position: absolute;
+    z-index: 10;
+}
+
+.bgImg {
+    width: 100%;
+    height: 100%;
+}
+
+.avatarBox {
+    position: relative;
+    z-index: 999;
+    top: 17vh;
+    width: 17vh;
+    height: 17vh;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.avatar {
+    margin-top: 0.5vh;
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+}
+
+.circle {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    height: 10vh;
+    background: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.userInfor {
+    width: 100%;
+    position: relative;
+    top: -10vh;
+    margin-top: 20vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userInfor .uname {
+    margin-top: 6vh;
+    font-size: 3vh;
+    text-align: center;
+    line-height: 8vh;
+}
+
+.userInfor view {
+    width: 100%;
+    line-height: 10vh;
+    border: 0.2vh rgb(242, 242, 242) solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.userInfor view :first-child {
+    border-right: 0.2vh solid rgb(242, 242, 242);
+}
+
+.userInfor view text {
+    width: 50%;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.options {
+    margin-top: -8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    margin-top: 0vh;
+    height: 10vh;
+}
+
+.option image {
+    margin-top: 3vh;
+    margin-left: 3vh;
+    width: 4vh;
+    height: 4vh;
+    vertical-align: middle;
+}
+
+.option text {
+    margin-left: 3vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+}
+
+.boder {
+    height: 1px;
+    margin-left: 10vh;
+    background: rgb(242, 242, 242);
+}
+
+.exit {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 80%;
+    color: white;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    background-color: rgb(6, 190, 190);
+    border-radius: 1vh;
+}
+
+/* .exit image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5vh;
+    height: 5vh;
+} */

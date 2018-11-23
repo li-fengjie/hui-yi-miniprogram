@@ -1,0 +1,20 @@
+<template name="signItemTpl">
+    <view class="sign-container">
+        <view class="meetImg">
+            <!-- <image class="avatar" src="{{uphoto}}"></image> -->
+            <image wx:if="{{uphoto != ''}}" src="{{uphoto}}" class="avatar"></image>
+            <image wx:else src="/image/uphoto.png" class="avatar"></image>
+            <!-- <image class="equipment" src="{{equImg}}"></image> -->
+        </view>
+        <view class="meetInfor">
+            <text class="title">{{mtitle}}</text>
+            <view>
+                <text class="address">{{maddress}}</text>
+                <text class="time">{{mlstartime}}~{{mlendtime}}</text>
+            </view>
+        </view>
+        <view class='issign'>
+            <image class="tag" src="{{tagUrl}}"></image>
+        </view>
+    </view>
+</template>

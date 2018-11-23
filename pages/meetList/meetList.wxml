@@ -1,0 +1,16 @@
+<!--pages/meetList/meetList.wxml-->
+<import src="meet-item/meet-item-tpl.wxml" />
+<view container="container">
+    <block wx:for="{{meetList}}" wx:key="item">
+        <view catchtap="onJumpMeetDetail" data-meet-id="{{item.mid}}">
+            <template is="meetItemTpl" data="{{...item}}" />
+        </view>
+    </block>
+</view>
+<view class="isHaveMeet" hidden="{{isHaveMeet}}">
+    <image src="/image/nothing.png"></image>
+</view>
+ <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view >
+    <view  class="weui-loadmore__tips">{{loadingTip}}</view >
+</view> 

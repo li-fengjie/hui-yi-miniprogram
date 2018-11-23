@@ -1,0 +1,21 @@
+<!--pages/meetList/meet-item/meet-item.wxml-->
+<template name="meetItemTpl">
+    <view class="meet-container">
+        <view class="info">
+            <view class="avatar">
+                <image src="{{uphoto}}"></image>
+            </view>
+            <text class="meetTitle">{{mtitle}}</text>
+            <text class="time">{{mlstartime}}</text>
+        </view>
+        <image wx:if='{{mimage != ""}}' src="{{mimage}}" class="meetImg"></image>
+        <image wx:else src='http://123.207.120.57/huiyi/public/upload/1525245653.png' class='meetImg'></image>
+        <view class="meetInfor">
+            <image src="/image/fp.png"></image>
+            <image src="/image/face.png"></image>
+            <image wx:if='{{wlanmac}}' src="/image/wifi.png"></image>
+			<image wx:else src="/image/ic_bluetooth.png"></image>
+            <text class="address">{{maddress}}</text>
+        </view>
+    </view>
+</template>

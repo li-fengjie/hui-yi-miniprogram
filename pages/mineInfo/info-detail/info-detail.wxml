@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="category-item">
+        <block wx:for="{{userInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="category-item">
+        <block wx:for="{{bnameInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="category-item" catchtap='onAddFaceTap'>
+        <block wx:for="{{faceInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+</view>

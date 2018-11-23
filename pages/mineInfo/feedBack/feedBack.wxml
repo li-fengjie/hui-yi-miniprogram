@@ -1,0 +1,18 @@
+<!-- <textarea placeholder='有什么不满意的地方,随时欢迎你的吐槽,你的支持就是我们进步最大的动力'>
+
+</textarea> -->
+<!-- <input type="text" placeholder='你的微信联系方式'>
+</input> -->
+<!-- <text class='tips'>有什么不满意的地方,随时欢迎你的吐槽,你的支持就是我们进步最大的动力'</text> -->
+<button open-type='feedback' catchtap='onFeedbackTap'>
+    <image src="/image/submit.png"></image>
+    我要反馈
+</button>
+<button open-type='contact'>
+    <image src="/image/icon_contact.png"></image>
+    问题求助
+</button>
+<view class='contact'>
+    <image src='/image/contact.png'></image>
+    <contact-button type="default-light" size="0" session-from="weapp" class='contact-button-hidden'></contact-button>
+</view>

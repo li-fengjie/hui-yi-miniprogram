@@ -1,0 +1,64 @@
+/* pages/meetList/meet-detail/meet-detail.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mimage {
+  width: 100%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 40rpx;
+}
+
+.avatar image {
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+  margin-left: 20rpx;
+}
+.name{
+	  font-size: 28rpx;
+	  line-height: 20rpx;
+}
+.avatar text {
+  margin-left: 20rpx;
+  margin-top: 38rpx;
+}
+
+.title {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 45rpx;
+  color: #4b556c;
+}
+
+.meetContent {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.comment text {
+  float: right;
+  margin-right: 20rpx;
+}
+
+.message {
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,57 @@
+/* pages/registeredFace/registeredFace.wxss */
+
+page {
+    height: 100%;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+}
+
+/* .hide {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40rpx;
+    height: 40rpx;
+} */
+
+.over {
+    float: right;
+    width: 45px;
+    height: 26px;
+    margin-right: 15rpx;
+    margin-top: 15rpx;
+    color: floralwhite;
+    border-radius: 5px;
+    text-align: center;
+	line-height:58rpx;
+    border: 1px solid #aaa;
+}
+
+.page-body {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-photo {
+    width: 20%;
+    height: 19%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.take-area {
+    height: 14%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #000;
+}
+
+.take-icon {
+    width: 100rpx;
+    height: 100rpx;
+    margin: auto;
+}

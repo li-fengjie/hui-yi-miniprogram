@@ -1,0 +1,50 @@
+{
+  "pages": [
+	"pages/login/index",
+    "pages/SignList/SignList",
+	"pages/verifyFace/verifyFace",
+	"pages/registeredFace/registeredFace",
+    "pages/meetList/meetList",
+    "pages/mineInfo/mineInfo",
+    "pages/mineInfo/historyMeet/historyMeet",
+    "pages/mineInfo/feedBack/feedBack",
+    "pages/meetList/meet-detail/meet-detail",  
+    "pages/mineInfo/device/device",
+	"pages/mineInfo/info-detail/info-detail",
+	"pages/mineInfo/tips/tips"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#06bebe",
+    "navigationBarTitleText": "会易",
+    "navigationBarTextStyle": "black",
+	"backgroundColor": "#06bebe"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [                                                        
+      {
+        "pagePath": "pages/meetList/meetList",
+        "text": "会议",
+        "iconPath": "image/meetIcon.png",
+        "selectedIconPath": "image/meetSelected.png"
+      },
+      {
+        "pagePath": "pages/SignList/SignList",
+        "text": "签到",
+        "iconPath": "image/fingerPrintIcon.png",
+        "selectedIconPath": "image/fingerPrintSelected.png"
+      },
+      {
+        "pagePath": "pages/mineInfo/mineInfo",
+        "text": "我的",
+        "iconPath": "image/mineIcon.png",
+        "selectedIconPath": "image/mineSelected.png"
+      }
+    ]
+  }
+}

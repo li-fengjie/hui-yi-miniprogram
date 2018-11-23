@@ -1,0 +1,11 @@
+<import src="../../meetList/meet-item/meet-item-tpl.wxml" />
+<view container="container">
+    <block wx:for="{{historyMeet}}" wx:key="item">
+        <view catchtap="onJumpMeetDetail" data-meet-id="{{item.mid}}">
+            <template is="meetItemTpl" data="{{...item}}" />
+        </view>
+    </block>
+    <view class="isHaveMeet" hidden="{{isHaveMeet}}">
+        <image src="/image/nothing.png"></image>
+    </view>
+</view>

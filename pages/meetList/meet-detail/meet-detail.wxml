@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="meetImg">
+        <image wx:if='{{meetDetail.mimage}}' src="{{meetDetail.mimage}}" class="mimage"></image>
+        <image wx:else src='http://123.207.120.57/huiyi/public/upload/1525245653.png' class='mimage'></image>
+    </view>
+    <view class="title">
+        {{meetDetail.mtitle}}
+    </view>
+    <view class="avatar">
+        <image src="{{meetDetail.uphoto}}"></image>
+        <text class="name">{{meetDetail.uname}}</text>
+    </view>
+    <view class="meetContent">
+        <view>{{meetDetail.mcontent}}</view>
+        <view>开始时间:{{meetDetail.mstartime}}</view>
+        <view>结束时间:{{meetDetail.mendtime}}</view>
+        <view>会议地点:{{meetDetail.maddress}}</view>
+    </view>
+    <!-- <view class="comment" catchtap='onJumpComment'>
+        <text>1</text>
+        <image src="/image/message.png" class="message"></image>
+    </view> -->
+    <!-- <web-view src="http://123.207.120.57/huiyi/public/api/Meet/meetContent?mid={{mid}}&equipment=wexin">
+  </web-view> -->
+</view>

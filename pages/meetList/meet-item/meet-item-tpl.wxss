@@ -1,0 +1,85 @@
+page {
+    background-color: rgb(242, 242, 242);
+}
+
+.meet-container {
+    position: relative;
+    margin-top: 20rpx;
+    border: 1px solid rgb(242, 242, 242);
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 15rpx;
+}
+
+.info {
+    width: 100%;
+    height: 120rpx;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 232rpx;
+}
+
+.avatar {
+    float: left;
+}
+
+.avatar image {
+    margin-left: 10rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-top: 10rpx;
+}
+
+.meetInfor {
+    margin-top: -10rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    font: bold;
+}
+
+.meetTitle {
+    float: left;
+    margin-left: 20rpx;
+    font-size: 35rpx;
+    margin-top: 40rpx;
+    color: white;
+    width: 420rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.meetImg {
+    border-top-left-radius: 15rpx;
+    border-top-right-radius: 15rpx;
+    width: 100%;
+    height: 350rpx;
+}
+
+.meetInfor {
+    background-color: white;
+    font-size: 24rpx;
+    border-bottom-left-radius: 15rpx;
+    border-bottom-right-radius: 15rpx;
+    font-weight: normal;
+}
+
+.meetInfor image {
+    width: 32rpx;
+    height: 32rpx;
+    margin-left: 30rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+
+.time {
+    float: right;
+    margin-right: 20rpx;
+    color: white;
+}
+
+.address {
+    float: right;
+    margin-right: 20rpx;
+}

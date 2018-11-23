@@ -1,0 +1,16 @@
+/* pages/mineInfo/historyMeet/historyMeet.wxss */
+@import "../../meetList/meet-item/meet-item-tpl.wxss";
+.container{
+  display:flex;
+  flex-direction: column;
+}
+.isHaveMeet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+}
+.isHaveMeet image{
+  width:250rpx;
+  height:250rpx;
+}

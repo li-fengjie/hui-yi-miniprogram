@@ -1,0 +1,51 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.0",
+	"appid": "wx10312d9dcd614c2e",
+	"projectname": "%E4%BC%9A%E6%98%93%E7%AD%BE%E5%88%B0",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "now",
+					"pathName": "pages/verifyFace/verifyFace",
+					"query": "",
+					"scene": "1032"
+				},
+				{
+					"id": 1,
+					"name": "更新",
+					"pathName": "pages/login/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

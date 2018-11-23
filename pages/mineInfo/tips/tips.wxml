@@ -1,0 +1,14 @@
+<!--pages/mineInfo/tips/tips.wxml-->
+<view class="tips-container">
+    <view class="logo">
+        <image src='/image/ic_logo.png'></image>
+    </view>
+    <view class='text'>
+        <text class='part'>会易签到小程序采用了人脸识别技术和指纹生物识别技术，对参与会议的人进行身份进行精确识别，采用无线测距技术限制签到人员位置，保证了签到数据的准确性。\n</text>
+        <text class='part'>使用流程：\n</text>
+        <text class='part'>①管理员发表会议，选择限制签到位置的无线设备（此过程不在该小程序进行）;\n</text>
+        <text class='part'>②签到人员使用会易签到小程序打开wifi搜索管理员无线设备（包括手机热点、路由器等）;\n</text>
+        <text class='part'>③搜索到管理员设备后，使用指纹（手机支持指纹）或刷脸验证签到;\n</text>
+        <text class='part'>④指纹生物识别成功或人脸比对成功，签到成功；\n</text>
+    </view>
+</view>

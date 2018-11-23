@@ -1,0 +1,49 @@
+textarea {
+    width: 100%;
+    height: 300rpx;
+    background-color: rgb(250, 250, 250);
+}
+
+input {
+    margin-top: 100rpx;
+    background-color: rgb(250, 250, 250);
+    height: 100rpx;
+}
+
+button {
+    margin-top: 38rpx;
+    background-color: rgb(6, 190, 190);
+    width: 86%;
+    color: white;
+}
+
+button image {
+    vertical-align: middle;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.contact {
+    /* position: fixed;
+	margin-right: 34rpx;
+	margin-top: 126rpx;
+	float:right; */
+    margin-top: 1.6vw;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 60rpx;
+    right: 38rpx;
+}
+
+.contact image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.contact-button-hidden {
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    opacity: 0;
+}

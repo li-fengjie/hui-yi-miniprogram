@@ -1,0 +1,35 @@
+/* pages/mineInfo/tips/tips.wxss */
+
+.tip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24rpx;
+    margin-bottom: -28rpx;
+}
+
+.logo image {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.text {
+    padding: 50rpx;
+    line-height: 28px;
+}
+
+.part {
+    font-size: 28rpx;
+    line-height: 12px;
+    color: #8b2323;
+    text-indent: 2em;
+    padding: 0 2em;
+}

@@ -1,0 +1,79 @@
+<view class="bg-swiper">
+    <swiper vertical="{{false}}" autoplay="{{true}}" indicator-color="#00000" interval='5000' indicator-active-color="#006cb7" circular="{{true}}">
+        <block wx:for="{{[1,2,3]}}" wx:for-item="i" wx:key="j">
+            <swiper-item>
+                <image src="/image/{{i}}.png"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="mask">
+    </view>
+    <view class="avatar">
+        <image src="{{isRegister}}" style="width:150rpx;height:150rpx;"></image>
+    </view>
+</view>
+<view class="enter">
+    <view class="switch-way">
+        <text style="{{login}}" bindtap='onSwitchWay' data-switch-way="login">登录</text>
+        <text style="{{register}}" bindtap="onSwitchWay" data-switch-way="register">注册</text>
+    </view>
+    <view class="login" hidden="{{isLogin}}">
+        <view class="user">
+            <image src="/image/user.png" class="userImg" />
+            <input type="text" placeholder='请输入账号' bindchange="saveUid" value="{{uid}}"></input>
+        </view>
+        <view class="password">
+            <image src="/image/password.png" class="passwordImg" />
+            <input type="{{passStatus}}" placeholder="请输入密码" bindchange="savePwd" value='{{pwd}}'></input>
+            <image src="{{srcUrl}}" class="passStatus" bindtouchstart="onSwitchClear" bindlongpress="onSwitchClear" bindtouchend="onSwitchciphertext" binstouchcancel="onSwitchciphertext" />
+        </view>
+        <view class="fingerPrint-login-container" hidden='{{!isfingerPrint}}'>
+            <image src="/image/fingerPrint.png" class="fingerPrint" bindtap='onFingerPrint'></image>
+        </view>
+        <!-- style="{{loginAni}}{{logining}}{{loginAni2}}" -->
+        <!-- <view class="loginBox" > -->
+        <button class="loginBtn" bindtap="onUserLogin" style="{{loginAni}}{{logining}}{{loginAni2}}">登录</button>
+        <!-- </view> -->
+    </view>
+    <view class="register" hidden="{{!isLogin}}">
+        <view class="user">
+            <image src="/image/user.png" class="userImg" />
+            <input type="text" placeholder='请填写账号' bindchange="saveRegisterUid" tapindex="1"></input>
+        </view>
+        <view class="password">
+            <image src="/image/password.png" class="passwordImg" />
+            <input type="{{passStatus}}" placeholder="请填写密码" bindchange="saveRegisterPwd" tapindex="2"></input>
+        </view>
+        <view class="password">
+            <image src="/image/password.png" class="passwordImg" />
+            <input type="{{passStatus}}" placeholder="请确认密码" bindchange="saveRegisterPwd1" tapindex="3"></input>
+        </view>
+        <view class="enterprise">
+            <image src="/image/enterprise.png" class="enterpriseImg" />
+            <input type="text" placeholder="请填写企业" bindchange="saveRegisterEnterPrise" tapindex="4"></input>
+        </view>
+        <view class="name">
+            <image src="/image/name.png" class="nameImg" />
+            <input type="text" placeholder="请填写姓名" bindchange="saveRegisterName" tapindex="5"></input>
+        </view>
+        <view class="phone">
+            <image src="/image/phone.png" class="phoneImg" />
+            <input type="text" placeholder="请填写号码" bindchange="saveRegisterPhone" tapindex="6"></input>
+        </view>
+        <view class="biologicalInfo">
+            <view class="fingerPrint-container" hidden='{{!isfingerPrint}}'>
+                <image src="/image/fingerPrint.png" class="fingerPrint" bindtap='onFingerPrintFid'></image>
+                <text>{{fingerPrintTip}}</text>
+            </view>
+            <!-- <view class="faical-container" hidden="{{isfacial}}">
+        <image src="/image/facial.png" class="facial" bindtap="onFacial"></image>
+        <text>录入人脸</text>
+      </view> -->
+        </view>
+        <button class="registerBtn" bindtap="onRegister">注册</button>
+    </view>
+    <view class='contact'>
+        <image src='/image/contact.png'></image>
+        <contact-button type="default-light" size="0" session-from="weapp" class='contact-button-hidden'></contact-button>
+    </view>
+</view>

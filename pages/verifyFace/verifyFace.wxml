@@ -1,0 +1,14 @@
+<view class="page-body">
+    <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 86%;">
+
+		<view class='.swiper-animate' hidden='{{!scan}}'></view>
+        
+		<cover-view>
+            <cover-image class="preview-photo" wx:if="{{src}}" mode="widthFix" src="{{src}}"></cover-image>
+        </cover-view>
+		<!-- <cover-image src='../../image/aface.png' class='face'></cover-image> -->
+    </camera>
+    <cover-view class="take-area">
+        <cover-image src='../../image/take_icon.png' bindtap="takePhoto" class='take-icon'></cover-image>
+    </cover-view>
+</view>

@@ -1,0 +1,21 @@
+<import src="sign-item/sign-item-tpl.wxml" />
+<view class="container">
+    <block wx:for="{{signList}}" wx:key="item">
+        <view catchtap="onSerachEqu" data-sign-id="{{item.sign_id}}" data-wlan-mac="{{item.wlanmac}}" data-bluetooth-mac="{{item.bluetoothmac}}" data-is-sign='{{item.issign}}'>
+            <template is="signItemTpl" data="{{...item}}" />
+        </view>
+    </block>
+</view>
+<view class="serachEqu" hidden='{{serachFlag}}' animation="{{animationData}}" bindtap="onHideSeachEqu" style="{{ani}}">
+    <text>正在查找设备...</text>
+    <image src="/image/error.png" class="hide"></image>
+    <view class="wave animate">
+        <view class="w1"></view>
+        <view class="w2"></view>
+        <view class="w3"></view>
+        <view class="w4"></view>
+    </view>
+</view>
+<view class="isHaveMeet" hidden="{{isHaveMeet}}">
+    <image src="/image/nothing.png"></image>
+</view>

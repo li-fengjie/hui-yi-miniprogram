@@ -1,0 +1,65 @@
+/* pages/camera/camera.wxss */
+
+page {
+    height: 100%;
+}
+.face{
+	width: 100%;
+	height: 100%;
+}
+.page-body {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-photo {
+    width: 20%;
+	height: 19%;
+	margin-top: 10px;
+	margin-left: 12px;
+}
+
+.take-area {
+	height: 14%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #000
+}
+
+.take-icon {
+    width: 100rpx;
+    height: 100rpx;
+    margin: auto;
+}
+
+
+.swiper-animate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to bottom, transparent, #3e88f1);
+	animation: scan 1.5s ease-in-out infinite;
+    -webkit-animation: scan 1.5s ease-in-out infinite;
+}
+
+@keyframes scan {
+    from {
+        top: -667px;
+    }/*网格移动到显示区域的外面*/
+    to {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes scan {
+    from {
+        top: -667px;
+    }
+    to {
+        top: 0;
+    }
+}

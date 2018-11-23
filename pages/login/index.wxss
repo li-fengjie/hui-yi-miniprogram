@@ -1,0 +1,238 @@
+.bg-swiper {
+    position: relative;
+}
+
+swiper {
+    width: 100%;
+    position: absolute;
+    top: 0rpx;
+    z-index: 98;
+    height: 400rpx;
+}
+
+.mask {
+    position: absolute;
+    top: 0rpx;
+    width: 100%;
+    height: 400rpx;
+    z-index: 99;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+swiper image {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar image {
+    position: absolute;
+    top: 120rpx;
+    left: 50%;
+    margin-left: -75rpx;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.enter {
+    position: relative;
+    top: 400rpx;
+}
+
+.enter .switch-way {
+    font-size: 40rpx;
+    background: black;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.switch-way :first-child {
+    border-right: 2rpx solid white;
+}
+
+.switch-way text {
+    color: white;
+    text-align: center;
+    font-size: 36rpx;
+    line-height: 100rpx;
+    width: 50%;
+}
+
+.login, .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user, .password, .enterprise, .name, .phone {
+    margin-top: 30rpx;
+    background-color: rgb(247, 247, 247);
+    width: 90%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.user .userImg, .password .passwordImg, .enterprise .enterpriseImg,
+.name .nameImg, .phone .phoneImg {
+    margin-left: 20rpx;
+}
+
+.user .userImg, .password .passwordImg, .password .passStatus,
+.enterprise .enterpriseImg, .name .nameImg, .phone .phoneImg {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 30rpx;
+}
+
+input {
+    font-size: 30rpx;
+    display: inline-block;
+    margin-left: 10rpx;
+    margin-top: 25rpx;
+}
+
+.password .passStatus {
+    position: absolute;
+    right: 6%;
+}
+
+.fingerPrint-login-container {
+    margin-top: 100rpx;
+}
+
+.fingerPrint {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.loginBox {
+    position: relative;
+    width: 50%;
+    height: 100rpx;
+    border-radius: 50%;
+    /* border: 3rpx solid transparent;
+  border-top-color: rgb(6, 190, 190);
+   animation: loginAni2 2.5s linear infinite; */
+}
+
+.loginBtn, .registerBtn {
+    position: relative;
+    margin-top: 60rpx;
+    width: 50%;
+    color: white;
+    height: 100rpx;
+    border-radius: 50rpx;
+    background-color: rgb(6, 190, 190);
+}
+
+.loginBox:before {
+    content: "";
+    position: absolute;
+    top: 30rpx;
+    left: 30rpx;
+    right: 30rpx;
+    bottom: 30rpx;
+    border-radius: 50%;
+    /* border: 3rpx solid transparent;
+  border-top-color: #e74c3c;
+  animation: loginAni2 1.5s linear infinite; */
+}
+
+.loginBox:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3rpx solid transparent;
+    border-top-color: #f9c922;
+    animation: loginAni2 2s linear infinite;
+}
+
+@keyframes loginAni {
+    0% {
+        width: 50%;
+        border-radius: 50rpx;
+    }
+
+    100% {
+        width: 100rpx;
+        border-radius: 50%;
+    }
+}
+
+@keyframes loginAni2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loginAni3 {
+    0% {
+        width: 100rpx;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.biologicalInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.fingerPrint-container, .faical-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    align-items: center;
+}
+
+.fingerPrint-container {
+    margin-right: 50rpx;
+}
+
+.faical-container {
+    margin-left: 50rpx;
+}
+
+.fingerPrint, .facial {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.registerBtn {
+    margin-bottom: 150rpx;
+}
+
+.contact {
+    margin-top: 1.6vw;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 60rpx;
+    right: 38rpx;
+}
+
+.contact image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.contact-button-hidden {
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    opacity: 0;
+}

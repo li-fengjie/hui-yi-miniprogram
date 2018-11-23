@@ -1,0 +1,6 @@
+/**app.wxss**/
+text{
+  font-size:25rpx;
+  font-family:Microsoft YaHei;
+  color: #666;
+}
