@@ -45,4 +45,10 @@
 
 会易签到视频简介
 
-<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=g068032qqav" allowFullScreen="true"></iframe>
+![点击查看视频演示](https://v.qq.com/txp/iframe/player.html?vid=g068032qqav)
+
+
+2018中国高校计算机大赛
+
+![二等奖](zs.jpg)
+
