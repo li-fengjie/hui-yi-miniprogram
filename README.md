@@ -42,4 +42,6 @@
 ###2018中国高校计算机大赛
 
 ![二等奖](zs.jpg)
-
+<br/>
+- [中国高校计算机大赛](http://www.c4best.cn/gxwxxcxkfs)
+- [微信小程序应用开发大赛](https://developers.weixin.qq.com/community/competition)
