@@ -26,9 +26,7 @@
 ---
 
 ---
-<img src="imgs/scan.png" width="200"/>
-<img src="imgs/fig.png" width="200"/>
-<img src="imgs/face.png" width="200"/>
+<img src="imgs/scan.png" width="200"/><img src="imgs/fig.png" width="200"/><img src="imgs/face.png" width="200"/>
 
 ###小程序简介
 
